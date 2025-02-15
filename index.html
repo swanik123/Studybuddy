@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBuddy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="splash-screen">
+        <h1>StudyBuddy</h1>
+        <p>Your AI-Powered Study Companion</p>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#chatbot">AI Assistant</a></li>
+            <li><a href="#planner">Planner</a></li>
+            <li><a href="#timer">Study Timer</a></li>
+            <li><a href="#subscription">Subscription</a></li>
+            <li><a href="#auth">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <section id="auth" class="auth">
+        <h2>Sign Up / Log In</h2>
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button onclick="signUp()">Sign Up</button>
+        <button onclick="logIn()">Log In</button>
+        <button onclick="googleSignIn()">Sign In with Google</button>
+        <p><a href="#" onclick="resetPassword()">Forgot Password?</a></p>
+    </section>
+
+    <section id="subscription" class="subscription">
+        <h2>Subscription Plans</h2>
+        <p>Unlock premium features with a subscription.</p>
+        <button onclick="subscribe(50)">₹50/month</button>
+        <button onclick="subscribe(299)">₹299/year</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
